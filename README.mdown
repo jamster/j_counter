@@ -66,4 +66,4 @@ Future releases will have features to build out stats controllers and have suppo
 
 This was pulled together from reading the Rails Guides but augmented with examples from the Devise gem
 
-Copyright (c) 2010 Jason Amster
+pulled together by me, Jason Amster
