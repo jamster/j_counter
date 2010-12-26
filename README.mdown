@@ -1,6 +1,5 @@
 # JCounter
 
-
 JCounter is a Ruby on Rails plugin that allows you easily add counting tickers to your views.  It uses the JCounter JavaScript Library
 
 ## Install

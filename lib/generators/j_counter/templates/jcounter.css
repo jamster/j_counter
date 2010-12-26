@@ -1,1 +1,16 @@
-css
+div#j_counter_tick{
+	display: block;
+	clear: both;
+}
+
+div.j_counter_tick {
+	float: left;
+	font-family: "Courier New", Courier, mono;
+	margin: 0;
+	background-color: #000;
+	border-style: none;
+	color: #00992e;
+	border-left: 1px solid #797979;
+	padding: 1px 1px 0 2px;
+	font-weight: bold;
+}
