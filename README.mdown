@@ -1,13 +1,67 @@
-JCounter
-========
-
-JCounter is a Ruby on Rails plugin that allows you easily add counting tickers to your views
+# JCounter
 
 
-Example
-=======
+JCounter is a Ruby on Rails plugin that allows you easily add counting tickers to your views.  It uses the JCounter JavaScript Library
 
-Example goes here.
+## Install
 
+For now I haven't packed this up into a gem, so it's just a simple clone
+
+	cd vendor/plugins
+	git clone git@github.com:jamster/j_counter.git
+	
+Then it's a simple generator to install the JavaScript and CSS
+	
+	rails generate j_counter:install
+	
+Then you just need to add the JS files (including JQuery) and teh CSS to your view.  Place the following in your HEAD tags in you views
+
+	<script type="text/javascript" charset="utf-8" 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<%= javascript_include_tag "jcounter" %>
+
+
+## Usage
+
+There are 2 types of usages, one in which you specify the counter options inline, and those that are pulled from an ajax query.
+
+### Inline
+
+#### Simplest form
+
+This is the most basic version and will use all the defaults
+	
+	<%= j_counter_html %>
+	<%= j_counter_runner %>
+	
+### AJAX
+
+	<%= j_counter_html %>
+	<%= j_counter_runner(:ajax => '/stats.json) %>
+
+where the <code>stats.json</code> is of the format:
+
+	 { "slope" : 1.5, "startCount" : 100 }
+	
+Future releases will have features to build out stats controllers and have support for caching models and stats in Redis and cache them in Memcached
+
+## TODO
+
+
+* Install
+	* Build out generators to add the JS to the layouts
+	* Turn this into a proper GEM
+
+* Controllers
+	* Add Stats Controller generator for ajax calls
+	* Add Memcached support
+ 
+* Models
+	* Add helper functions for stats
+	* add Redis support to make it quick
+
+
+## Credits
+
+This was pulled together from reading the Rails Guides but augmented with examples from the Devise gem
 
 Copyright (c) 2010 Jason Amster
