@@ -58,7 +58,10 @@ Future releases will have features to build out stats controllers and have suppo
 	* Add helper functions for stats
 	* add Redis support to make it quick
 
-
+* Steelo
+	* Need to find some crafty designer to build out some sick styles
+	* Buy the crafty designer some beers from helping out
+	
 ## Credits
 
 This was pulled together from reading the Rails Guides but augmented with examples from the Devise gem
