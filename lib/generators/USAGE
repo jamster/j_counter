@@ -1,0 +1,13 @@
+Description:
+    JCounter is a JavaScript/Ruby/Rails plugin that provides the ability to simply add in counters to web pages. This generator adds the JavaScript and CSS to be used by the plugin
+
+
+Example:
+    rails generate j_counter:install
+	
+
+    This will add:
+        /public/javascripts/jcounter.js
+		/public/stylesheets/jcounter.css
+		
+

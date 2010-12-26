@@ -1,0 +1,13 @@
+JCounter
+========
+
+JCounter is a Ruby on Rails plugin that allows you easily add counting tickers to your views
+
+
+Example
+=======
+
+Example goes here.
+
+
+Copyright (c) 2010 Jason Amster
